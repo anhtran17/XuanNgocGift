@@ -68,11 +68,31 @@ body {
 .name{
  font-family: 'Brush Script MT';
   margin: 0;
-  font-size: 2.5em;
+  font-size: 2em;
   margin-top: -0.6em;
   color: white;
-  text-shadow: 0 0 0.05em #fff, 0 0 0.2em #8da630, 0 0 0.3em #8da630;
+  text-shadow: 0 0 0.05em #fff, 0 0 0.2em #F08080, 0 0 0.3em #F08080;
   transform: rotate(-0deg);
   animation: animate 1.2s infinite;
+  position: absolute;
    z-index:1000
 }
+
+
+img {
+	aspect-ratio: 1;
+	object-fit: cover;
+	max-width:200px;
+	max-height:200px;
+	width: auto;
+	height: auto;
+	animation: animate 1.2s infinite;
+	filter: grayscale(50%);
+	-webkit-filter: brightness(5);
+	filter: drop-shadow(0 0 5px rgb(10, 86, 113));
+	opacity: 0.35;
+	--_m: radial-gradient(#000 69%, #0000 70%) 84.5% fill/100%;
+	-webkit-mask-box-image: var(--_m);
+	mask-border: var(--_m);
+	clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+  }
